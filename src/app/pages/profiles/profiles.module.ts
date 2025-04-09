@@ -7,14 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { ProfilesPageRoutingModule } from './profiles-routing.module';
 
 import { ProfilesPage } from './profiles.page';
+import { TarjetitaComponent } from 'src/app/components/tarjetita/tarjetita.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfilesPageRoutingModule
+    ProfilesPageRoutingModule,
+    
+    
   ],
-  declarations: [ProfilesPage]
+  declarations: [ProfilesPage, TarjetitaComponent]
 })
 export class ProfilesPageModule {}

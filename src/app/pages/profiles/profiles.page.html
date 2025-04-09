@@ -1,4 +1,8 @@
 
 <ion-content >
   <h1>bienvenido a profile</h1>
+  <br>
+  <div *ngFor="let user of usuarios">
+  <app-tarjetita [usuario]="user"></app-tarjetita>
+  </div>
 </ion-content>
