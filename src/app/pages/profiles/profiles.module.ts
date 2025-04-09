@@ -7,17 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { ProfilesPageRoutingModule } from './profiles-routing.module';
 
 import { ProfilesPage } from './profiles.page';
-import { TarjetitaComponent } from 'src/app/components/tarjetita/tarjetita.component';
+
+import { SharedModule } from 'src/app/components/shared/shared.module';
 
 @NgModule({
   imports: [
+    SharedModule,
     CommonModule,
     FormsModule,
     IonicModule,
     ProfilesPageRoutingModule,
-    
-    
   ],
-  declarations: [ProfilesPage, TarjetitaComponent]
+  declarations: [ProfilesPage]
+  
 })
 export class ProfilesPageModule {}

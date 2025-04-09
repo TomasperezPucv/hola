@@ -1,4 +1,36 @@
 <ion-content >
     <h1>bienvenido a loader</h1>
-    <h2>esta es una pagina de prueba</h2>
+    <br>
+    <h5>Aca pone tu info *guiño guiño*</h5>
+    <br>
+    <ion-list>
+        <ion-item>
+            <ion-input [(ngModel)]="rut" placeholder="ingrese rut (sin punto ni digito)"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input [(ngModel)]="nombre" placeholder="ingrese nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input [(ngModel)]="edad"   type="number" placeholder="ingrese edad"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-select [(ngModel)]="casado"  placeholder="Estado civil">
+              <ion-select-option value="soltero">Soltero</ion-select-option>
+              <ion-select-option value="casado">casado</ion-select-option>
+              
+            </ion-select>
+        </ion-item>
+        
+    </ion-list>
+
+    <ion-button expand="block" (click)="guardar()" color="warning">Guardar</ion-button>
+    <div *ngIf="listo">
+        <app-tarjetita [usuario]="usuario"></app-tarjetita>
+    </div>
 </ion-content>
+
+
+
