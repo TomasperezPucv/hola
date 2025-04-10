@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'profiles',
     loadChildren: () => import('./pages/profiles/profiles.module').then( m => m.ProfilesPageModule)
   },
+  {
+    path: 'incrementador',
+    loadChildren: () => import('./pages/incrementador/incrementador.module').then( m => m.IncrementadorPageModule)
+  },
   
 ];
 

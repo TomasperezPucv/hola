@@ -26,4 +26,8 @@ export class HeaderComponent  implements OnInit {
     this.router.navigate(['/loader']);
   }
 
+  goToContador(){
+    this.router.navigate(['/incrementador']);
+  }
+
 }
