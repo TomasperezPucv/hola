@@ -1,28 +1,37 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>pagina culera XD</ion-title>
-      <ion-buttons slot="secondary">
-        <ion-button (click)="goToHome()">
-          <ion-icon name="home-outline"></ion-icon>
-          IR A CASA
-        </ion-button>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <!-- Título -->
+        <ion-col size="12" size-md="4">
+          <ion-title>Pagina culera 😎</ion-title>
+        </ion-col>
 
-        <ion-button (click)="goToProfile()">
-          <ion-icon name="person-outline"></ion-icon>
-          IR A PERFIL
-        </ion-button>
+        <!-- Botones -->
+        <ion-col size="12" size-md="8">
+          <ion-buttons class="ion-justify-content-end">
+            <ion-button (click)="goToHome()">
+              <ion-icon slot="start" name="home-outline"></ion-icon>
+              IR A CASA
+            </ion-button>
 
-        <ion-button (click)="goToLoader()">
-          <ion-icon name="reload-circle-outline"></ion-icon>
-          IR A LOADER (TEST)
-        </ion-button>
+            <ion-button (click)="goToProfile()">
+              <ion-icon slot="start" name="person-outline"></ion-icon>
+              IR A PERFIL
+            </ion-button>
 
-        <ion-button (click)="goToContador()">
-          <ion-icon name="calculator-outline"></ion-icon>
-          IR A CONTADOR
-        </ion-button>
+            <ion-button (click)="goToLoader()">
+              <ion-icon slot="start" name="reload-circle-outline"></ion-icon>
+              LOADER
+            </ion-button>
 
-
-      </ion-buttons>
-    </ion-toolbar>
+            <ion-button (click)="goToContador()">
+              <ion-icon slot="start" name="calculator-outline"></ion-icon>
+              CONTADOR
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
 </ion-header>

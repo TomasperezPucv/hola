@@ -3,8 +3,8 @@
   <h1>bienvenido a profile</h1>
   <br>
 
-
-  <div *ngFor="let user of usuarios">
+  
+   <div *ngFor="let user of usuarios">
       <div *ngIf="soloCasados">
         <app-tarjetita *ngIf="user.casado" [usuario]="user"></app-tarjetita>
       </div>
@@ -14,4 +14,5 @@
   </div>
   <br>
   <ion-button (click)="filtrarCasados()">filtrar</ion-button>
+  
 </ion-content>
