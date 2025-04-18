@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   standalone:false,
 })
 export class HeaderComponent  implements OnInit {
+  showThemeOptions = false;
 
   constructor(private router:Router) { }
 
@@ -29,5 +30,21 @@ export class HeaderComponent  implements OnInit {
   goToContador(){
     this.router.navigate(['/incrementador']);
   }
+
+  toggleThemeOptions() {
+    this.showThemeOptions = !this.showThemeOptions;
+  }
+
+  setLightTheme() {
+    document.body.setAttribute('color-theme', 'light');
+    this.showThemeOptions = false;
+  }
+
+  setDarkTheme() {
+    document.body.setAttribute('color-theme', 'dark');
+    this.showThemeOptions = false;
+  }
+
+  
 
 }

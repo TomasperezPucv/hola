@@ -1,2 +1,15 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+/* Claro (por defecto) */
+:root {
+    --ion-color-primary: #d2691e;
+    --ion-color-light: #f4f5f8;
+    --ion-color-dark: #222428;
+  }
+  
+  /* Oscuro */
+  [color-theme='dark'] {
+    --ion-background-color: #0f0d1f;
+    --ion-text-color: #ffffff;
+    --ion-color-primary: #4d0eab;
+  }

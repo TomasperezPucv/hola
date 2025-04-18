@@ -4,7 +4,7 @@
       <ion-row class="ion-align-items-center">
         <!-- Título -->
         <ion-col size="12" size-md="4">
-          <ion-title>Pagina culera 😎</ion-title>
+          <ion-title class="testTitle">Pagina culera 😎</ion-title>
         </ion-col>
 
         <!-- Botones -->
@@ -29,6 +29,22 @@
               <ion-icon slot="start" name="calculator-outline"></ion-icon>
               CONTADOR
             </ion-button>
+
+            <ion-button (click)="toggleThemeOptions()">
+              <ion-icon slot="icon-only" name="color-palette-outline"></ion-icon>
+            </ion-button>
+
+            <!-- Botones para cambiar tema -->
+            <ng-container *ngIf="showThemeOptions">
+              <ion-button color="light" (click)="setLightTheme()">
+                <ion-icon slot="start" name="sunny-outline"></ion-icon>
+                Claro
+              </ion-button>
+              <ion-button color="dark" (click)="setDarkTheme()">
+                <ion-icon slot="start" name="moon-outline"></ion-icon>
+                Oscuro
+              </ion-button>
+            </ng-container>
           </ion-buttons>
         </ion-col>
       </ion-row>
