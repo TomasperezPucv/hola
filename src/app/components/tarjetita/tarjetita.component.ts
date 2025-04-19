@@ -16,6 +16,10 @@ export class TarjetitaComponent  implements OnInit {
   ngOnInit() {
     
   }
+
+  isAdmin(): boolean {
+    return this.usuario.rango === 'admin';
+  }
   
 
   

@@ -1,8 +1,10 @@
 <ion-content >
-    <h1>bienvenido a loader</h1>
-    <br>
-    <h5>Aca pone tu info *guiño guiño*</h5>
-    <br>
+    <div class="Bienvenida">
+        <h1 id="Titulo">bienvenido a loader</h1>
+        <br>
+        <h5>Aca pone tu info *guiño guiño*</h5>
+        <br>
+    </div>
     <ion-list>
         <ion-item>
             <ion-input [(ngModel)]="rut" placeholder="ingrese rut (sin punto ni digito)"></ion-input>
@@ -26,7 +28,7 @@
         
     </ion-list>
 
-    <ion-button expand="block" (click)="guardar()" color="warning">Guardar</ion-button>
+    <ion-button expand="block" (click)="guardar()" class="BotonConfirmacion"> Guardar</ion-button>
     <div *ngIf="listo">
         <app-tarjetita [usuario]="usuario"></app-tarjetita>
     </div>

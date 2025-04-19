@@ -1,11 +1,29 @@
 #titlePerson {
-  font-weight: bold;
-  color: chocolate;
+  font-weight: bolder;
+  color: rgb(24, 11, 11);
+  font-family: "Montserrat", sans-serif;
   //text-decoration: line-through;
+}
+
+#userRank{
+  font-style: italic;
+  font-weight: bold;
+  --color: #000000
+  
 }
 
 .userDescription {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: black;
+}
+
+.admin-clase {
+  --background: #fdbea0;
+  --color: #000000;
+}
+
+.usuario-clase {
+  --background: #9ef8ec;
+  --color: #000000;
 }

@@ -5,10 +5,13 @@ import { Usuario } from '../models/usuario';
 })
 export class UsersService {
   private usuarios: Usuario[] = [];
-  
+  FirstTime: boolean = true;
   constructor() { }
 
   llenarUsuarios(): Usuario[] {
+    if (!this.FirstTime) {
+      return this.usuarios;
+    }
     this.usuarios= [ 
       { id: 12345678, nombre: "Juan", casado: true, edad: 25, rango: "admin" },
       { id: 87654321, nombre: "Maria", casado: false, edad: 30, rango: "usuario" },
@@ -21,7 +24,11 @@ export class UsersService {
       { id: 33445566, nombre: "Javier", casado: true, edad: 31, rango: "admin" },
       { id: 55664433, nombre: "Valeria", casado: false, edad: 24, rango: "usuario" }
     ];
-
+    this.FirstTime = false;
     return this.usuarios;
+  }
+
+  addUsuario(usuario: Usuario) {
+    this.usuarios.push(usuario);
   }
 }

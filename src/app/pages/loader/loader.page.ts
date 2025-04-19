@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/models/usuario';
-
+import { UsersService } from 'src/app/services/users.service';
 @Component({
   selector: 'app-loader',
   templateUrl: './loader.page.html',
@@ -16,7 +16,7 @@ export class LoaderPage implements OnInit {
   listo:boolean = false;
 
 
-  constructor() { }
+  constructor(private usuarios:UsersService) { }
 
   ngOnInit() {
   }
@@ -36,6 +36,7 @@ export class LoaderPage implements OnInit {
     else this.usuario.casado = false;
     this.usuario.rango = "usuario";
     this.listo= true;
+    this.usuarios.addUsuario(this.usuario);
   }
 
 
