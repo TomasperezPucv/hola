@@ -17,18 +17,40 @@
 }
 //cajita es solo para probar el box model
 .TestCajita{
-    font-size: 20px;
+    /*font-size: 20px;
     //text-align: center;
-    color: #000;
-    background: chocolate;
     padding: 5px; //espacio entre el texto y el borde de la caja
     //margin: 20px; //espacio entre la caja y el resto de la pagina
+    */
+    background: chocolate;
+    color:white;
+    text-align: center;
+    width: 400px;
+    padding: 10px 20px; //padding: top bottom | right left;
     
 }
 
 .isaac{
-    background: wheat;
+ 
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-transform: uppercase; //todo en mayusculas funciona lowercase
+    margin:auto;
+    //background: wheat;
     //padding: 5px 60px 5px 60px; //padding: top right bottom left
     //padding: 10px 20px; //padding: top bottom | right left;
     //margin: 10px;
+}
+
+#BotTitle{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.Description{
+    font-size: 11px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
 }

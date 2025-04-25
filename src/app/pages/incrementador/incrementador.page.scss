@@ -6,3 +6,28 @@
     color: chocolate;
     text-align: center;
 }
+
+.borderTest{
+    background: coral;
+    padding: 0px 20px 10px 20px; //padding: top right bottom left
+    color: wheat;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    /*border-color: chocolate;
+    border-style: solid;
+    border-width: 4px;*/
+    border: 10px solid chocolate;
+    border-radius: 20px 100px 20px 100px; //redondea las esquinas de la caja
+}
+
+.testBoxsizing{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background: coral;
+    padding-top: 10px;
+    margin: auto;
+    box-sizing: border-box; //hace que el padding y el border se sumen al tamaño total de la caja
+    border: 10px solid rgba(30, 78, 210, 0.24);
+}
